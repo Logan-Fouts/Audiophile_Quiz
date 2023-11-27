@@ -30,7 +30,7 @@ class AudioQuizApp:
         add_window = tk.Toplevel(self.root)
         add_window.title("Add New Question")
 
-        ttk.Label(add_window, text="Title:").pack()
+        tk.Label(add_window, text="Title:").pack()
         title_entry = ttk.Entry(add_window)
         title_entry.pack()
 
