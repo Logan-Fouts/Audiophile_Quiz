@@ -18,5 +18,15 @@
         ],
         "correct": 1,
         "cover": ""
+    },
+    {
+        "title": "S'Wonderful",
+        "clips": [
+            "audio\\(MP3 128) S'Wonderful.mp3",
+            "audio\\(MP3 320) S'Wonderful.mp3",
+            "audio\\(MP3 128) S'Wonderful.mp3"
+        ],
+        "correct": 1,
+        "cover": "images\\S'Wonderful.jpg"
     }
 ]
