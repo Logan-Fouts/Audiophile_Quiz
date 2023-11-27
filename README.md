@@ -21,6 +21,7 @@ The Audio Quality Quiz is a Python application that challenges users to identify
    pip install pygame
    pip install pillow
    pip install customtkinter
+   pip install packaging
    ```
 
 ## Running the Application

@@ -17,7 +17,7 @@ class AudioQuizApp:
         self.root = root
         root.title("Audio Quality Quiz")
 
-        root.configure(bg="#2a2b2a")
+        root.configure(bg="#252425")
 
         pygame.init()
         pygame.mixer.init()
@@ -32,7 +32,7 @@ class AudioQuizApp:
             return json.load(file)
 
     def add_question(self):
-        add_window = ctk.CTkToplevel(self.root)
+        add_window = ctk.CTkToplevel(self.root, fg_color="#252425")
         add_window.title("Add New Question")
         style = ttk.Style(add_window)
         style.configure("Custom.TLabel", background="#252425", foreground="white")
@@ -107,13 +107,14 @@ class AudioQuizApp:
 
 
     def show_menu(self):
-        self.menu_frame = ctk.CTkFrame(self.root)
+        self.menu_frame = ctk.CTkFrame(self.root, fg_color="#252425")
         self.menu_frame.pack(padx="10px", pady="10px")
 
         menu_title = ctk.CTkLabel(
             self.menu_frame,
             text="Welcome to the Audio Quality Quiz",
             font=ctk.CTkFont(size=16, weight="bold"),
+            text_color="white"
         )
         menu_title.pack(pady=(0, 20))
 
@@ -136,7 +137,7 @@ class AudioQuizApp:
         self.setup_quiz()
 
     def setup_quiz(self):
-        self.frame = ctk.CTkFrame(self.root)
+        self.frame = ctk.CTkFrame(self.root, fg_color="#252425")
         self.frame.pack(padx=10, pady=10)
 
         self.title_label = tk.Label(
@@ -154,7 +155,7 @@ class AudioQuizApp:
                 widget.destroy()
 
         question = self.questions[question_index]
-        self.title_label.config(text=question["title"], bg="#2a2b2a", fg="white")
+        self.title_label.config(text=question["title"], bg="#252425", fg="white")
         self.clips = question["clips"]
         self.correct_answer = question["correct"]
         self.cover_path = question["cover"]
@@ -180,6 +181,7 @@ class AudioQuizApp:
         instruction_label = ctk.CTkLabel(
             self.frame,
             text="Select the clip with the highest quality:",
+            text_color="white"
         )
         instruction_label.pack(pady=(20, 10))
 
@@ -192,7 +194,7 @@ class AudioQuizApp:
                 variable=self.var,
                 value=i,
                 font=self.customFont,
-                bg="#2a2b2a",
+                bg="#252425",
                 fg="white",
                 selectcolor="#1e6aa4",
             )
