@@ -1,0 +1,22 @@
+[
+    {
+        "title": "Rock and Roll McDonalds 1",
+        "clips": [
+            "audio/audio1.mp3",
+            "audio/audio1.mp3",
+            "audio/audio1.mp3"
+        ],
+        "correct": 0,
+        "cover": "images/cover1.jpg"
+    },
+    {
+        "title": "Rock and Roll McDonalds 2",
+        "clips": [
+            "audio/audio1.mp3",
+            "audio/audio1.mp3",
+            "audio/audio1.mp3"
+        ],
+        "correct": 1,
+        "cover": ""
+    }
+]
